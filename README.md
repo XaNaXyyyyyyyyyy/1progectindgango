@@ -1,2 +1,1 @@
-# 1progectindgango
-1учебныйпроект
+# first-project-django
