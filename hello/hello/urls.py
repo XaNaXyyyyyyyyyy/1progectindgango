@@ -23,8 +23,7 @@ urlpatterns = [
     path('', views.index),
     path('create/' views.create),
     path('about/', TemplateView.as_view(template_name="firstapp/about.html")),
-    path('contact/', TemplateView.as_view(template_name="firstapp/contact.html",
-                                          extra_context={"work": "Разработка програмнных продуктов!"})),
+    path('contact/', TemplateView.as_view(template_name="firstapp/contact.html", extra_context={"work": "Разработка програмнных продуктов!"})),
     path('details/', views.details),
     path('products/<int:productid>/', views.products),
     path('users/', views.users),
@@ -32,5 +31,8 @@ urlpatterns = [
     path('chaihana/', views.chaihana),
     path('nameage/', views.nameage),
     path('formakak/', views.forma)
+    path(", views.index),
+    path('create/', views.create), 
+
 ]
 
