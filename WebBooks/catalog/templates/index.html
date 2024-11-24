@@ -1,4 +1,5 @@
 {% extends "base_generic.html" %} {% block content %}
+<div style="background-color:white"></div>
 <h1>Главная страница</h1>
 <p>
   Добро пожаловать в <em>Мир книг</em>, Это очень простой веб-сайт, написанный
@@ -11,9 +12,11 @@
   <li><strong>Количество книг:</strong> {{ num_books }}</li>
   <li><strong>Количество экземпляров книг: </strong> {{ num_instances }}</li>
   <li>
-    <strong>Количество экземпляров книг в заказе: </strong> {{num_instances_available }}
+    <strong>Количество экземпляров книг в заказе: </strong>
+    {{num_instances_available }}
   </li>
   <li><strong>Количество авторов книг: </strong> {{ num_authors }}</li>
 </ul>
 <p>Количество посещений данной страницы - {{ num_visits }}</p>
+</div>
 {% endblock %}
